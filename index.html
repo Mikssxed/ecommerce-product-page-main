@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <script type="module" defer src="./app.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <img class="hamburger" src="./images/icon-menu.svg" alt="menu">
+        <img src="./images/logo.svg" alt="sneakers" />
+        <ul class="tabs">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <img class="cart" src="./images/icon-cart.svg" alt="cart" />
+        <img class="avatar" src="./images/image-avatar.png" alt="avatar" />
+        <div class="shopList hidden">
+          <header>Cart</header>
+          <div class="emptyContainer">
+            <div class="empty">Your cart is empty.</div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="images">
+          <div class="main_img">
+            <button class="previousMobile">
+              <img src="./images/icon-previous.svg" alt="previous" />
+            </button>
+            <button class="nextMobile">
+              <img src="./images/icon-next.svg" alt="next" />
+            </button>
+            <img
+              class="mainImg"
+              src="./images/image-product-1.jpg"
+              alt="boots"
+            />
+          </div>
+          <div class="thumbnail_container">
+            <img
+              class="selectedImage"
+              src="./images/image-product-1-thumbnail.jpg"
+            />
+            <img src="./images/image-product-2-thumbnail.jpg" />
+            <img src="./images/image-product-3-thumbnail.jpg" />
+            <img src="./images/image-product-4-thumbnail.jpg" />
+          </div>
+        </div>
+        <div class="product">
+          <h1>Sneaker Company</h1>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="prices">
+            <div class="price">
+              $125.00
+              <div class="discount">50%</div>
+            </div>
+            <div class="original_price">$250.00</div>
+          </div>
+          <div class="buy_container">
+            <div class="amount">
+              <button class="minus">
+                <img src="./images/icon-minus.svg" alt="minus" /></button
+              ><span class="orderNumber">0</span
+              ><button class="plus">
+                <img src="./images/icon-plus.svg" alt="plus" />
+              </button>
+            </div>
+            <button class="addToCart">
+              <img src="./images/icon-cart.svg" alt="cart" />Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="overlay hidden"></div>
+    <div class="imagesBigger hidden">
+      <div class="images imagesB">
+        <div class="main_img">
+          <button class="closeBtn">
+            <img src="./images/icon-close.svg" alt="close" />
+          </button>
+          <button class="previous">
+            <img src="./images/icon-previous.svg" alt="previous" />
+          </button>
+          <img class="mainImg" src="./images/image-product-1.jpg" alt="boots" />
+          <button class="next">
+            <img src="./images/icon-next.svg" alt="next" />
+          </button>
+        </div>
+        <div class="thumbnail_container">
+          <img
+            class="selectedImage"
+            src="./images/image-product-1-thumbnail.jpg"
+          />
+          <img src="./images/image-product-2-thumbnail.jpg" />
+          <img src="./images/image-product-3-thumbnail.jpg" />
+          <img src="./images/image-product-4-thumbnail.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="mobileMenu hidden">
+      <button class="closeBtnMobile">
+        <img src="./images/icon-close.svg" alt="close" />
+      </button>
+      <ul class="tabsMobile">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </body>
+</html>
