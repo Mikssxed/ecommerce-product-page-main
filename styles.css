@@ -180,14 +180,15 @@ p {
   box-shadow: 0px 8px 24px -9px var(--neutral-color1);
   right: -70px;
   width: 350px;
-  bottom: -230px;
+  bottom: -330px;
   color: var(--neutral-color1);
   font-weight: 700;
   background-color: var(--neutral-color5);
   border-radius: 10px;
-  height: 250px;
+  height: 350px;
   display: flex;
   flex-direction: column;
+  
 }
 header {
   padding: 20px;
@@ -377,7 +378,7 @@ header {
   .shopList {
     z-index: 100;
     left: 50%;
-    bottom: -260px;
+    bottom: -360px;
     transform: translate(-50%);
   }
   .product {
